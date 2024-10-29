@@ -1,5 +1,9 @@
 const mysql = require('mysql2');
 
+if (!process.env.DB_HOST || !process.env.DB_USER || !process.env.DB_PASSWORD || !process.env.DB_NAME) {
+  throw new Error('Variables d\'environnement de base de données manquantes');
+}
+
 const connection = mysql.createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,

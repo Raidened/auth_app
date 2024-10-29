@@ -29,10 +29,15 @@ npm install
 2. Créez un fichier .env dans le dossier backend avec les variables suivantes :
 
 PORT=5000
+
 DB_HOST=localhost
+
 DB_USER=votre_utilisateur
+
 DB_PASSWORD=votre_mot_de_passe
+
 DB_NAME=votre_base_de_donnees
+
 JWT_SECRET=votre_secret_jwt
 
 3. Démarrez le serveur :
