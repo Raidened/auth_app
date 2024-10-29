@@ -1,6 +1,6 @@
 # Application d'Authentification
 
-Une application full-stack avec système d'authentification utilisant [React.js](https://reactjs.org/) pour le frontend et [Node.js] pour le backend.
+Une application full-stack avec système d'authentification utilisant [React.js](https://reactjs.org/) pour le frontend et [Node.js](https://nodejs.org/) pour le backend.
 
 ## Technologies Utilisées
 
