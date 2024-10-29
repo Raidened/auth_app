@@ -38,7 +38,7 @@ JWT_SECRET=votre_secret_jwt
 3. Démarrez le serveur :
 
 ```bash
-npm start
+npm app.js
 ```
 #### frontend (./frontend)
 
