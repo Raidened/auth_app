@@ -86,6 +86,24 @@ app.post('/api/auth/login', (req, res) => {
   });
 });
 
+// Gérer les exceptions/erreur/ 401 404 etc
+app.use((req, res, next) => {
+    res.status(404).json({ 
+      status: 404,
+      message: "Route non trouvée"
+    });
+  });
+  
+  app.use((err, req, res, next) => {
+    const status = err.status || 500;
+    const message = err.message || "Erreur serveur interne";
+    
+    res.status(status).json({
+      status: status,
+      message: message
+    });
+  });
+  
 // Démarrage du serveur
 app.listen(port, () => {
   console.log(`Serveur en cours d'exécution sur http://localhost:${port}`);
