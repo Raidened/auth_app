@@ -79,7 +79,10 @@ app.post('/api/auth/login', (req, res) => {
       expiresIn: 86400, // 24 heures
     });
 
-    res.status(200).json({ token });
+    res.status(200).json({ 
+        token,
+        username: user.username
+     });
   });
 });
 
